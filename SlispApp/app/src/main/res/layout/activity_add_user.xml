@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUser"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginTop="5dp">
+
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:text="@string/add_new_administrator"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/adduser"
+        android:contentDescription="@string/userIcon"
+        android:padding="30dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="left"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="201dp"
+            tools:targetApi="o" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="201dp"
+            tools:targetApi="o" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="310dp"
+            tools:ignore="MissingConstraints"
+            android:autofillHints=""
+            tools:targetApi="o"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="left"
+            android:hint="@string/confirm_password"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="423dp"
+            tools:targetApi="o" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="600dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF9800"
+        />
+
+
+</LinearLayout>

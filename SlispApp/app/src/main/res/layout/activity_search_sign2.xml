@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".SearchSign2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:orientation="horizontal"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/Signview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-120dp"
+            android:background="@drawable/border1"
+            android:padding="5dp"
+            android:visibility="visible"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/EnglishName"
+            android:layout_width="359dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-320dp"
+            android:layout_marginTop="80dp"
+
+            android:text="English Name:" />
+
+        <TextView
+            android:id="@+id/LugandaName"
+            android:layout_width="363dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-360dp"
+            android:layout_marginTop="155dp"
+            android:text="Luganda Name:" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="358dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-360dp"
+            android:layout_marginTop="245dp"
+            android:text="Description:" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

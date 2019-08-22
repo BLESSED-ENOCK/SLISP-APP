@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSign"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginTop="5dp">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_new_sign"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/upload"
+        android:contentDescription="uploadicon"
+        android:padding="30dp" />
+
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:focusable="true"
+       android:focusableInTouchMode="true">
+
+       <EditText
+           android:id="@+id/EnglishName"
+           android:layout_width="385dp"
+           android:layout_height="60dp"
+           android:autofillHints=""
+           android:ems="10"
+           android:hint="@string/english_name"
+
+           android:inputType="textPersonName"
+           android:textSize="20sp"
+           android:textAlignment="center"
+           tools:ignore="LabelFor,MissingConstraints"
+           tools:layout_editor_absoluteX="10dp"
+           tools:layout_editor_absoluteY="246dp"
+           tools:targetApi="o" />
+
+   </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/LugandaName"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:textAlignment="center"
+            android:hint="@string/luganda_name"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="143dp"
+            tools:targetApi="o" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sign_description"
+
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="246dp"
+            tools:targetApi="o" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="157dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="117dp"
+            android:layout_height="157dp"
+            android:contentDescription="@string/todo"
+              android:src="@drawable/sign"
+            android:visibility="gone"
+             />
+
+
+        <Button
+            android:id="@+id/ChooseSign"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_sign"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginStart="@dimen/margin" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="center"
+        android:text="@string/add_sign4"
+        android:textSize="30sp"
+        android:backgroundTint="#FF9800"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+
+
+
+</LinearLayout>

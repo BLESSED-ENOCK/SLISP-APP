@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.slispapp.ManageUsers">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="@string/searchsign"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="@string/home4"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Logout"
+        android:orderInCategory="100"
+        android:title="@string/logout4"
+        app:showAsAction="never" />
+</menu>

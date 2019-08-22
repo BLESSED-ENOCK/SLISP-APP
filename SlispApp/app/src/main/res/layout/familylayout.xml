@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7F9EA">
+
+    <RelativeLayout
+        android:layout_width="346dp"
+        android:layout_height="248dp">
+
+        <TextView
+            android:id="@+id/family"
+            android:layout_width="163dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-45dp"
+            android:gravity="center"
+            android:paddingTop="70dp"
+            android:text="@string/family"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/family2"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/familyImage"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="-38dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="-107dp"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:text="@string/family"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/familyImage"
+            android:layout_width="150dp"
+            android:layout_height="147dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="50sp"
+            android:contentDescription="@string/todo"
+            android:maxHeight="150dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

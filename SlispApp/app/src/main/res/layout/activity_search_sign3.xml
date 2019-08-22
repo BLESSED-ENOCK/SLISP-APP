@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchSign3">
+
+
+    <RelativeLayout
+        android:id="@+id/Relativesearchsign"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/signname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Type a word (Wandiika Ekigambo)"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search"
+            tools:ignore="ContentDescription"
+            tools:targetApi="o" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:id="@+id/searchlist">
+        </ListView>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

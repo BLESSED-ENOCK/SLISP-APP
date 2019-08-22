@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:focusableInTouchMode="true"
+   >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="174dp"
+            android:layout_height="40dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="196dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:text="Poster"
+                android:textSize="15dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="11dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="432dp"
+            android:layout_height="118dp"
+            android:paddingTop="50dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="4dp">
+
+            <TextView
+                android:id="@+id/PostDetail3"
+                android:layout_width="393dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Post Detail"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="500dp"
+            android:layout_height="24dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="11dp">
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="0dp"
+                android:text="Date"
+                android:textSize="15dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="11dp" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/post"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Write a comment (Teesa naaffe)"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="125dp">
+
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:background="@drawable/send_button"
+            tools:srcCompat="@drawable/send_button" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="398dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="116dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>

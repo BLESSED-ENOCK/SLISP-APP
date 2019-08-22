@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.slispapp.User">
+    <item
+        android:id="@+id/searchsign"
+        android:icon="@drawable/search"
+        android:title="@string/searchsign"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/manageuser"
+        android:orderInCategory="100"
+        android:title="@string/manage_users2"
+        android:icon="@drawable/signouticon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        android:icon="@drawable/signouticon"
+        app:showAsAction="never" />
+
+</menu>

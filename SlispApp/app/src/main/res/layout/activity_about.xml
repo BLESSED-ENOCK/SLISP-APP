@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="50dp"
+            android:text="@string/AboutSLISP"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="-29dp"
+
+            android:text=" In English Language:\nSLISP was developed by a group of final year BIS students 2019 as a research project leading to the award of Bachelors degree in Information Systems at Makerere University."
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="70dp"
+            android:text="SLISP was developed to facilitate the deaf and their caretakers who don't understand English, to learn and communicate in sign language.\n\nThe application also facilitates information sharing amongst the targeted users in form of chats.\n\nAll users are encouraged to add signs to the Application in order to populate the its knowledge base. \nLogin for more functionalities of SLISP \n\nThank you for using SLISP."
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="299dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="260dp"
+            android:text="\nMu Lulimi Luganda:\nSLISP  yakolebwa okuyamba bakigala n'ababalabilira aba tamanyi luzungu, Okuyiiga n'okutegeera engeri yo kukozesa olulimi lwa sayini.\n\nOmutimbagano era guyamba abantu a bagendereddwa ogukoseza mukugaba n'okukubaganya ebilowoozo kubizibi bye basanga mubulamu obwabuligyo.\n\n Abakozesa SLISP bona bakubirizibwa okujongerako siyinizi. \nYingila okusoboola okukozesa emigaso emirala egya SLISP. \n\nWebale Okukozesa SLISP."
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

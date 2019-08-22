@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slispapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sign"
+        android:label="SLISP"
+        android:roundIcon="@drawable/sign"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SearchSign3" />
+        <activity android:name=".SearchSign2" />
+        <activity android:name=".DeleteSigns" />
+        <activity android:name=".VerifySign" />
+        <activity android:name=".ViewUsers" />
+        <activity android:name=".AddUser" />
+        <activity
+            android:name=".ManageUsers"
+            android:label="@string/title_activity_manage_users"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Administrator"
+            android:label="@string/title_activity_administrator"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+
+        <activity android:name=".Food" />
+        <activity android:name=".Family" />
+        <activity android:name=".Greetings" />
+        <activity android:name=".Basics" />
+        <activity android:name=".AddSign" />
+        <activity android:name=".About" />
+        <activity android:name=".School" />
+        <activity android:name=".Home" />
+        <activity android:name=".Health" />
+        <activity android:name=".Numeric" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".Alphabets" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PostDetail" />
+        <activity android:name=".Chat" />
+    </application>
+
+</manifest>

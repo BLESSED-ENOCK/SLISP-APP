@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/searchsign"
+        android:icon="@drawable/search"
+        android:title="@string/searchsign"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/login2"
+        android:icon="@drawable/loginicon2"
+        android:title="@string/login"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/signup"
+        android:icon="@drawable/signupicon2"
+        android:title="@string/sign_up"
+        app:showAsAction="withText"
+        />
+
+    <item
+        android:id="@+id/about4"
+        android:title="@string/about"
+        android:icon="@drawable/infoicon2"
+        app:showAsAction="withText" />
+
+</menu>
+
+

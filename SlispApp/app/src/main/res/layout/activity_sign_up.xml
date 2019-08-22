@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignUp"
+android:padding="30dp"
+
+    >
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="400dp"
+    android:layout_height="52dp"
+    android:text="Signup For An Account \n(Gulawo Akaawunti)"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="18dp"
+    tools:layout_editor_absoluteY="56dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="251dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/signup" />
+    </LinearLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="375dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:weightSum="1"
+        android:id="@+id/linearLayout4">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Username (Elinya Lyo)"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints,RtlHardcoded"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="201dp"
+                tools:targetApi="o" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Phone Number (Essimu yo)"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="201dp"
+                tools:targetApi="o" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password (Pasiwadi)"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="310dp"
+                tools:ignore="MissingConstraints"
+                android:autofillHints=""
+                tools:targetApi="o"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Confirm Password (Kakasa Pasiwadi)"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                tools:ignore="MissingConstraints,RtlHardcoded"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="423dp"
+                tools:targetApi="o" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signup2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_rounded"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="600dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF9800"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
